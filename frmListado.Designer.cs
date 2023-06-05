@@ -168,14 +168,14 @@
             this.dgvProductos.Size = new System.Drawing.Size(509, 443);
             this.dgvProductos.TabIndex = 10;
             // 
-            // frmlistado
+            // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.mrcAgregar);
-            this.Name = "frmlistado";
+            this.Name = "frmListado";
             this.Text = "frmListado";
             this.mrcAgregar.ResumeLayout(false);
             this.mrcAgregar.PerformLayout();

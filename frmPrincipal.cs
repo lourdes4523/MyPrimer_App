@@ -17,6 +17,18 @@ namespace MyPrimer_App
             InitializeComponent();
         }
 
+        private void cmdFinanzas_Click(object sender, EventArgs e)
+        {
+            frmFinanzas finanzas = new frmFinanzas();
+            finanzas.ShowDialog();
+        }
+
+        private void cmdAlmacen_Click(object sender, EventArgs e)
+        {
+            frmInventario inventario = new frmInventario();
+            inventario.ShowDialog();
+        }
+
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
 

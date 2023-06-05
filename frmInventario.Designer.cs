@@ -118,6 +118,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "frmInventario";
             this.Text = "Inventario";
+            this.Load += new System.EventHandler(this.frmInventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cmdComida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdFrio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdLimpieza)).EndInit();

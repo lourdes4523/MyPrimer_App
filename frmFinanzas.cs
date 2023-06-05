@@ -16,5 +16,10 @@ namespace MyPrimer_App
         {
             InitializeComponent();
         }
+
+        private void frmFinanzas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

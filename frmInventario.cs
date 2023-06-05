@@ -16,5 +16,10 @@ namespace MyPrimer_App
         {
             InitializeComponent();
         }
+
+        private void frmInventario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

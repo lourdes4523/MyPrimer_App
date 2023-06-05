@@ -276,10 +276,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 486);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(350, 553);
             this.Controls.Add(this.mrcSaldo);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmFinanzas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Gastos Mensuales";
+            this.Load += new System.EventHandler(this.frmFinanzas_Load);
             this.mrcSaldo.ResumeLayout(false);
             this.mrcSaldo.PerformLayout();
             this.mrcGastosFijos.ResumeLayout(false);

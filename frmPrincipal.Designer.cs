@@ -51,6 +51,7 @@
             this.cmdFinanzas.TabIndex = 4;
             this.cmdFinanzas.Text = "Finanzas";
             this.cmdFinanzas.UseVisualStyleBackColor = true;
+            this.cmdFinanzas.Click += new System.EventHandler(this.cmdFinanzas_Click);
             // 
             // cmdAlmacen
             // 
@@ -60,6 +61,7 @@
             this.cmdAlmacen.TabIndex = 5;
             this.cmdAlmacen.Text = "Almacen";
             this.cmdAlmacen.UseVisualStyleBackColor = true;
+            this.cmdAlmacen.Click += new System.EventHandler(this.cmdAlmacen_Click);
             // 
             // frmPrincipal
             // 
