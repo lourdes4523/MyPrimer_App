@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="frmAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregar.Designer.cs">
+      <DependentUpon>frmAgregar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
     <Compile Include="Visualizer1.cs" />
+    <EmbeddedResource Include="frmAgregar.resx">
+      <DependentUpon>frmAgregar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListado.resx">
       <DependentUpon>frmListado.cs</DependentUpon>
     </EmbeddedResource>
