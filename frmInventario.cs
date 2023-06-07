@@ -17,9 +17,43 @@ namespace MyPrimer_App
             InitializeComponent();
         }
 
+        private void cmdComida_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Comida");
+            lista.ShowDialog();
+
+        }
+
+        private void cmdFrio_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Frio");
+            lista.ShowDialog();
+        
+        }
+
+        private void cmdLimpieza_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Limpieza");
+            lista.ShowDialog();
+
+        }
+
+        private void cmdBaño_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Baño");
+            lista.ShowDialog();
+
+        }
+
+        private void cmdVerTodo_Click(object sender, EventArgs e)
+        {
+            frmListado lista = new frmListado("Listado");
+            lista.ShowDialog();
+        }
+
         private void frmInventario_Load(object sender, EventArgs e)
         {
 
         }
     }
-}
+}        

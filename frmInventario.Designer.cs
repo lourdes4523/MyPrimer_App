@@ -33,19 +33,19 @@
             this.cmdComida = new System.Windows.Forms.PictureBox();
             this.cmdFrio = new System.Windows.Forms.PictureBox();
             this.cmdLimpieza = new System.Windows.Forms.PictureBox();
-            this.cmdBano = new System.Windows.Forms.PictureBox();
+            this.cmdBaño = new System.Windows.Forms.PictureBox();
             this.cmdVerTodo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cmdComida)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdFrio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdLimpieza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdBano)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdBaño)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.Blue;
+            this.lblTitulo.ForeColor = System.Drawing.Color.Fuchsia;
             this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(349, 73);
@@ -62,6 +62,7 @@
             this.cmdComida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cmdComida.TabIndex = 6;
             this.cmdComida.TabStop = false;
+            this.cmdComida.Click += new System.EventHandler(this.cmdComida_Click);
             // 
             // cmdFrio
             // 
@@ -73,6 +74,7 @@
             this.cmdFrio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cmdFrio.TabIndex = 7;
             this.cmdFrio.TabStop = false;
+            this.cmdFrio.Click += new System.EventHandler(this.cmdFrio_Click);
             // 
             // cmdLimpieza
             // 
@@ -84,17 +86,19 @@
             this.cmdLimpieza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cmdLimpieza.TabIndex = 8;
             this.cmdLimpieza.TabStop = false;
+            this.cmdLimpieza.Click += new System.EventHandler(this.cmdLimpieza_Click);
             // 
-            // cmdBano
+            // cmdBaño
             // 
-            this.cmdBano.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmdBano.Image = ((System.Drawing.Image)(resources.GetObject("cmdBano.Image")));
-            this.cmdBano.Location = new System.Drawing.Point(197, 281);
-            this.cmdBano.Name = "cmdBano";
-            this.cmdBano.Size = new System.Drawing.Size(179, 164);
-            this.cmdBano.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cmdBano.TabIndex = 9;
-            this.cmdBano.TabStop = false;
+            this.cmdBaño.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdBaño.Image = ((System.Drawing.Image)(resources.GetObject("cmdBaño.Image")));
+            this.cmdBaño.Location = new System.Drawing.Point(197, 281);
+            this.cmdBaño.Name = "cmdBaño";
+            this.cmdBaño.Size = new System.Drawing.Size(179, 164);
+            this.cmdBaño.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cmdBaño.TabIndex = 9;
+            this.cmdBaño.TabStop = false;
+            this.cmdBaño.Click += new System.EventHandler(this.cmdBaño_Click);
             // 
             // cmdVerTodo
             // 
@@ -104,6 +108,7 @@
             this.cmdVerTodo.TabIndex = 10;
             this.cmdVerTodo.Text = "Ver Todo";
             this.cmdVerTodo.UseVisualStyleBackColor = true;
+            this.cmdVerTodo.Click += new System.EventHandler(this.cmdVerTodo_Click);
             // 
             // frmInventario
             // 
@@ -111,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 498);
             this.Controls.Add(this.cmdVerTodo);
-            this.Controls.Add(this.cmdBano);
+            this.Controls.Add(this.cmdBaño);
             this.Controls.Add(this.cmdLimpieza);
             this.Controls.Add(this.cmdFrio);
             this.Controls.Add(this.cmdComida);
@@ -122,7 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmdComida)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdFrio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdLimpieza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdBano)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdBaño)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,7 +139,7 @@
         private System.Windows.Forms.PictureBox cmdComida;
         private System.Windows.Forms.PictureBox cmdFrio;
         private System.Windows.Forms.PictureBox cmdLimpieza;
-        private System.Windows.Forms.PictureBox cmdBano;
+        private System.Windows.Forms.PictureBox cmdBaño;
         private System.Windows.Forms.Button cmdVerTodo;
     }
 }

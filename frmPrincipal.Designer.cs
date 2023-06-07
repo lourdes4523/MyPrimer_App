@@ -48,7 +48,7 @@
             this.cmdFinanzas.Location = new System.Drawing.Point(12, 92);
             this.cmdFinanzas.Name = "cmdFinanzas";
             this.cmdFinanzas.Size = new System.Drawing.Size(168, 225);
-            this.cmdFinanzas.TabIndex = 4;
+            this.cmdFinanzas.TabIndex = 0;
             this.cmdFinanzas.Text = "Finanzas";
             this.cmdFinanzas.UseVisualStyleBackColor = true;
             this.cmdFinanzas.Click += new System.EventHandler(this.cmdFinanzas_Click);
@@ -58,7 +58,7 @@
             this.cmdAlmacen.Location = new System.Drawing.Point(204, 92);
             this.cmdAlmacen.Name = "cmdAlmacen";
             this.cmdAlmacen.Size = new System.Drawing.Size(168, 225);
-            this.cmdAlmacen.TabIndex = 5;
+            this.cmdAlmacen.TabIndex = 1;
             this.cmdAlmacen.Text = "Almacen";
             this.cmdAlmacen.UseVisualStyleBackColor = true;
             this.cmdAlmacen.Click += new System.EventHandler(this.cmdAlmacen_Click);

@@ -10,11 +10,59 @@ using System.Windows.Forms;
 
 namespace MyPrimer_App
 {
+    
     public partial class frmListado : Form
     {
-        public frmListado()
+        public List<Producto> productos = new List<Producto>();
+        string titulo;
+
+        public frmListado(string encabezado)
         {
+            titulo = encabezado;
             InitializeComponent();
         }
+
+        private void frmListado_Load(object sender, EventArgs e)
+        {
+            this.Text = titulo;
+            dgvProductos.Columns.Add("Producto", "Producto");
+            dgvProductos.Columns.Add("Categoria", "Categoria");
+            dgvProductos.Columns.Add("Cantidad", "Cantidad");
+            dgvProductos.Columns.Add("Caduca", "Caduca");
+            dgvProductos.Columns.Add("Vencimiento", "Vencimiento");
+        }
+
+        
+private void cmdAgregar_Click(object sender, EventArgs e)
+        {
+            
+            Producto producto = new Producto(txtProducto.Text, lstCategoria.Text, nmcCantidad.Value, "Caduca", dtpVencimiento.Value.ToString("dd/MM/yyyy"));
+            if (chkCaduca.Checked == false)
+            {
+                producto.Caduca = "No";
+                producto.fechaVencimiento = "--/--/--";
+            }
+            else
+            {
+                producto.Caduca = "Si";
+            }
+            //productos.Add(producto);
+            dgvProductos.Rows.Add(producto.Nombre, producto.Tipo, producto.Cantidad, producto.Caduca, producto.fechaVencimiento);
+        }
+
+        private void chkCaduca_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkCaduca.Checked == true)
+            {
+                dtpVencimiento.Enabled = true;
+            }
+            else
+            {
+                dtpVencimiento.Enabled = false;
+            }
+        }
     }
+
+
 }
+

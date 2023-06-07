@@ -107,7 +107,7 @@
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.cmdCancelar.BackColor = System.Drawing.Color.LightSlateGray;
             this.cmdCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdCancelar.ForeColor = System.Drawing.Color.Black;
             this.cmdCancelar.Location = new System.Drawing.Point(198, 431);
@@ -116,6 +116,7 @@
             this.cmdCancelar.TabIndex = 19;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // mrcEgresos
             // 
@@ -204,9 +205,9 @@
             this.lblComida.AutoSize = true;
             this.lblComida.Location = new System.Drawing.Point(28, 146);
             this.lblComida.Name = "lblComida";
-            this.lblComida.Size = new System.Drawing.Size(86, 19);
+            this.lblComida.Size = new System.Drawing.Size(92, 19);
             this.lblComida.TabIndex = 11;
-            this.lblComida.Text = "Comida $";
+            this.lblComida.Text = "Comidas $";
             // 
             // lblTotal
             // 
@@ -251,7 +252,7 @@
             // 
             // cmdGrabar
             // 
-            this.cmdGrabar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.cmdGrabar.BackColor = System.Drawing.Color.SlateGray;
             this.cmdGrabar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdGrabar.ForeColor = System.Drawing.Color.Black;
             this.cmdGrabar.Location = new System.Drawing.Point(35, 431);
@@ -260,6 +261,7 @@
             this.cmdGrabar.TabIndex = 0;
             this.cmdGrabar.Text = "Grabar";
             this.cmdGrabar.UseVisualStyleBackColor = false;
+            this.cmdGrabar.Click += new System.EventHandler(this.cmdGrabar_Click);
             // 
             // lblTotalTitulo
             // 

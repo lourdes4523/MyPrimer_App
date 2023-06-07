@@ -91,6 +91,7 @@
             this.cmdAgregar.TabIndex = 6;
             this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
+            this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
             // 
             // chkCaduca
             // 
@@ -177,6 +178,7 @@
             this.Controls.Add(this.mrcAgregar);
             this.Name = "frmListado";
             this.Text = "frmListado";
+            this.Load += new System.EventHandler(this.frmListado_Load);
             this.mrcAgregar.ResumeLayout(false);
             this.mrcAgregar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmcCantidad)).EndInit();
